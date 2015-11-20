@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Welcome to Vecta Corp.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">	
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery.mobilemenu.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="js/jquery.cycle2.js"></script>
+    <script src="js/jquery.carousel.js"></script>
+    <script>
+        // mobile menu jquery ui
+        $(document).ready(function(){
+            $('#responsive-menu').mobileMenu();
+        });
+
+        // tooltip jquery ui
+        $(function() {
+            $(document).tooltip();
+        });
+        
+        // tabs jquery ui
+        $(function() {
+            $("#vtabs").tabs();
+        });
+        
+        $(function() {
+            $("#vtabs a").click(function() {
+                    $("#vtabs a").removeClass("ActiveTab");
+                    $(this).addClass("ActiveTab"); 
+            });
+        });
+    </script>
+    
+</head>
+
+<body>
+	<main class="container">
+		<figure class="three columns">
+			<img src="images/logo.gif" class="scale-with-grid" alt="">
+		</figure>
+		
+		<nav class="thirteen columns">
+			<ul id="responsive-menu">
+				<li><a href="index.html" title="Let's go back to the home page.">Home</a></li>
+				<li><a href="aboutus.html" title="Want to know more about us?">About Us</a></li>
+				<li><a href="solutions.html" title="We have three solutions available depending on your needs. vProspect, vConvert, and vRetain.">Solutions</a></li>
+				<li><a href="support.html" title="Need some help?">Support</a></li>
+				<li><a href="contactus.html" title="Have a question?">Contact Us</a></li>
+			</ul>
+		</nav>
+		
+		<header class="sixteen columns">
+			<img src="images/header.gif" class="scale-with-grid" alt="">
+		</header>
+		
+		<section id="welcome" class="eleven columns">
+			<h4>About Us</h4>
+
+            <p>With innovative approaches and advanced methodologies, Vecta Corp. provides scalable business solutions to help companies achieve success through revenue increase, cost management and user satisfaction.</p>
+            <p>Our approach stems from the three most important business growth aspects: helping companies reach prospects, assist in converting prospects to customers, and assist in retaining those customers. This is accomplished through our interactive solutions and expertise in providing a memorable and positive user experience.</p>
+            <p>In order to effectively prospect, convert and retain, the user experience is placed at the center of all our development projects. Providing unique, memorable and positive experiences, striking the appropriate emotional connection and reducing mental effort required to interact with the site ultimately results in higher prospect conversion and customer retention figures.</p>
+            <p>Our expertise in strategy, design and technology allows us to create business solutions that excite and inspire, are easy to navigate, and enable businesses to strengthen their competitive advantage.</p>
+            <p>With increased conversion and retention, our solutions provide companies with opportunities to increase revenues and enhance productivity. This is how we helped Dorknozzle achieve remarkable success, including more than doubling their customer base from 20,000 to 70,000 within 15 months of launching a Vecta Corp. solution.</p>
+            
+            <h4>Management Team</h4>
+            <div id="vtabs">
+                <ul>
+                    <li><a href="#vtabs-1" class="ActiveTab">Agnes Abacus</a></li>
+                    <li><a href="#vtabs-2">Damon Dev</a></li>
+                    <li><a href="#vtabs-3">Herbert Humorless</a></li>
+                    <li><a href="#vtabs-4">Mike Marketer</a></li>
+                    <li><a href="#vtabs-5">Wilbur Wonka</a></li>
+                </ul>
+                <div id="vtabs-1">
+                    <p>Agnes Abacus<br>
+                        Vice President, Accounting</p>
+                        <p>With over 14 years of public accounting and business advisory service experience in the Tongas, Ecuador, Canada, Botswana and the US, Agnes is the most seasoned and diversed member of the Vecta Corp. team.</p>
+                </div>
+                <div id="vtabs-2">
+                    <p>Damon Dev<br>
+                        Director of Development</p>
+                    <p>Damon is the Director of Development for Vecta Corp. Damon creates learning materials for Vecta Corp. as well as consulting for customers to integrate vSolutions into their production pipeline and business processes. Vecta Corp. is creating the next revolution of digital media applications that incorporates 2D, 3D, sound, and video into a single multimedia presentations that can be distributed on the Web, CD/DVD-ROM, Kiosks, or intranet environments.</p>
+                </div>
+                <div id="vtabs-3">
+                    <p>Herbert Humorless<br>
+                        Director of Human Resources</p>
+                        <p>Herbert joined Vecta Corp. in October 1999 as Vecta Corp's first Human Resources Director. As such, he has overall human resources responsibility for Vecta Corp's operations worldwide and is based at the company's global headquarters in San Diego. Although responsible for Vecta Corp's human resources strategies globally, Herbert's work is directly focused on assuring complete employee satisfaction and loyalty.</p>
+</p>
+                </div>
+                <div id="vtabs-4">
+                    <p>Mike Marketer<br>
+                        Vice President, Sales and Marketing</p>
+                        <p>Mike serves as the Vice President of Sales and Marketing for Vecta Corp. In this role Mike oversees Vecta Corp's marketing and corporate communications efforts worldwide. Mike joined Vecta Corp. in early 1998 and worked in business development roles prior to being assigned to lead Vecta Corp's global vSolutions sales and marketing team in the summer of 2000. He initiated Vecta Corp's global branding and marketing campaigns as vSolutions global director and then Vice President of Marketing. In 2001, his role expanded to include overall responsibility for corporate marketing, sales, and communications.</p>
+</p>
+                </div>
+                <div id="vtabs-5">
+                    <p>Wilbur Wonka<br>
+                        Founder and CEO</p>
+                        <p>While Wilbur is the founder and CEO of Vecta Corp, he is primarily known for being the pioneer and world leader of creating vSolutions. Wilbur has led the commercialization of vSolution technology and its success as the world’s fastest-growing, most advanced technologies in its respective industry. Now used by tens of millions of consumers worldwide, vSolutions have been the technology of choice for governments and private organizations for nearly a decade.</p>
+                </div>
+            </div>    <!-- </div id="tabs> -->			 
+            
+            <h4 id="hq">Our New Headquarters</h4>
+            <div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="4000"  data-cycle-next="#next" data-cycle-prev="#prev" data-cycle-pager="#pager"> 
+                <img src="images/building_01.jpg">
+                <img src="images/building_02.jpg">
+                <img src="images/building_03.jpg">
+                <img src="images/building_04.jpg">
+            </div>
+            <div class="jump">
+                <a href=# id=prev>&lt;&lt; Prev </a><a href=# id=next> Next &gt;&gt; </a>
+            </div>
+        </section>
+		
+		<section id="testimonials" class="five columns">
+			<h4>Careers</h4>
+			<p>We are always looking for educated and motivated people to join our team. Do you have what it takes to build best-of-breed vSolutions? Submit your resume.</p>
+		</section>
+		<footer><h5>&copy; 2015 Vecta Corp.</h5></footer>
+	</main>
+</body>
+</html>
